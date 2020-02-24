@@ -1,0 +1,21 @@
+# App Engine app's settings
+service: app
+runtime: [RUNTIME]
+instance_class: [INSTANCE_CLASS]
+automatic_scaling:
+  target_cpu_utilization: [TARGET_CPU_UTILIZATION]
+  min_instances: [MIN_INSTANCES]
+  max_idle_instances: [MAX_IDLE_INSTANCES]
+env_variables:
+  PORT: [PORT]
+  Methods: [METHOD]
+  allowedHeaders: [ALLOWED_HEADERS]
+  LOG_LEVEL: [LOG_LEVEL]
+  proxyTargetTimeoutSeconds: [PROXY_TARGET_TIMEOUT_SEC]
+  timeoutIncomingRequestsSeconds: [TIMEOUT_INCOMING_REQUEST_SEC]
+  corsMaxAge: [CROS_MAX_AGE]
+handlers:
+- url: /.*
+  secure: always
+  redirect_http_response_code: 301
+  script: auto

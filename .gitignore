@@ -1,0 +1,18 @@
+# Exclude compiled .js files
+*.js
+
+# Exclude dependencies
+node_modules/
+
+*.map
+
+.vscode
+
+.env
+
+keyFile.json
+deploy.local
+
+#code coverage
+/.nyc_output
+/.test_output

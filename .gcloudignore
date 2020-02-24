@@ -1,0 +1,28 @@
+# Exclude source
+src/
+test/
+.vscode/
+
+# Exclude dependencies
+node_modules/
+
+.env
+.gitiignore
+.npmrc
+
+keyFile.json
+deploy.local
+
+#code coverage
+.nyc_output/
+.test_output/
+
+#ignore typescript
+tsconfig.json
+tslint.json
+
+#ignore ci yml
+azure-pipelines.yml
+
+#gcoud credential keyFile
+keyfile.json
